@@ -20,12 +20,7 @@ var Room = mongoose.model('Room', {
     type: String,
     beds: Number,
     max_occupancy: Number,
-    cost_per_night: [
-    		{
-    				lower: Number,
-    				upper: Number
-    		}
-    ],
+    cost_per_night: Number,
     reserved: [
         {
             from: String,
@@ -73,7 +68,7 @@ Room.count({}, function(err, count){
                 max_occupancy: getRandomInt(1, 8),
                 cost_per_night: getRandomInt(50, 500),
                 reserved: [
-                    {from: '2018-06-08', to: '2018-06-12'},
+                    {from: '2018-06-09', to: '2018-06-14'},
                     {from: '2017-04-18', to: '2017-04-23'},
                     {from: '2018-01-29', to: '2018-01-30'}
                 ]

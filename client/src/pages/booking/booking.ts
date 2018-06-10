@@ -12,6 +12,8 @@ export class BookingPage {
     details: any;
     checkIn: any;
     checkOut: any;
+    options: any;
+    data: any;
  
     constructor(public navCtrl: NavController, public navParams: NavParams, public roomsService: RoomsProvider, public loadingCtrl: LoadingController) {
         this.room = this.navParams.get('room');
