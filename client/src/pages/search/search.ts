@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, LoadingController, AlertController } from 'ionic-angular';
 import { RoomsProvider } from '../../providers/rooms/rooms';
-import { AvailableRoomsPage } from '../available-rooms/available-rooms';
 
 @IonicPage() 
 @Component({
@@ -66,7 +65,7 @@ export class SearchPage {
  
                 alert.present();
             } else {
-                this.nav.push(AvailableRoomsPage, {
+                this.nav.push("AvailableRoomsPage", {
                     rooms: data,
                     details: options
                 });

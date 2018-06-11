@@ -5,19 +5,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { AvailableRoomsPage } from '../pages/available-rooms/available-rooms';
-import { BookingPage } from '../pages/booking/booking';
-import { SearchPage } from '../pages/search/search';
+//import { HomePage } from '../pages/home/home';
+//import { AvailableRoomsPage } from '../pages/available-rooms/available-rooms';
+//import { BookingPage } from '../pages/booking/booking';
+//import { SearchPage } from '../pages/search/search';
 import { RoomsProvider } from '../providers/rooms/rooms';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage,
-    AvailableRoomsPage,
-    BookingPage,
-    SearchPage
+    //HomePage,
+    //AvailableRoomsPage,
+    //BookingPage,
+    //SearchPage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -26,11 +26,11 @@ import { RoomsProvider } from '../providers/rooms/rooms';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage,
-    AvailableRoomsPage,
-    BookingPage,
-    SearchPage
+    //HomePage,
+    //AvailableRoomsPage,
+    //BookingPage,
+    //SearchPage
+    MyApp
   ],
   providers: [
     StatusBar,

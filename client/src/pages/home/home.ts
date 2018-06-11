@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { IonicPage, Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { SearchPage } from '../search/search';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -13,7 +13,7 @@ export class HomePage {
   }
   
   openSearch(){
-  	this.navCtrl.push(SearchPage);
+  	this.navCtrl.push('SearchPage');
   }
 
 }
