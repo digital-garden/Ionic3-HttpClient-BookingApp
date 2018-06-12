@@ -1,0 +1,40 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Booking</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-card>
+		<img class="header" src="https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_960_720.jpg"/>
+		<div class="card-title-container">
+			<p class="card-title">{{room.type}}</p>
+		</div>
+	</ion-card>
+	
+	<ion-list>
+		<ion-item>
+			<strong>Check In:</strong> {{checkIn}}
+		</ion-item>
+		<ion-item>
+			<strong>Check Out:</strong> {{checkOut}}
+		</ion-item>
+		<ion-item>
+			<strong>Beds:</strong> {{room.beds}}
+		</ion-item>
+		<ion-item>
+			<strong>Guests:</strong> {{details.guests}}
+		</ion-item>
+		<ion-item>
+			<strong>Per Night:</strong> {{room.cost_per_night}}
+		</ion-item>
+	</ion-list>
+	
+	<button (click)="book()" full ion-button color="light">Book Now</button>
+	
+</ion-content>

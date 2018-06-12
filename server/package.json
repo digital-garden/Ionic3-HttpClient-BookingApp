@@ -1,17 +1,16 @@
 {
   "name": "nodeserver",
   "version": "0.0.0",
-  "description": "how the fuck does this work",
+  "description": "Based on Josh Morony's Hotel Booking App - Updated for Ionic 3, HttpClient and Lazy Loading",
   "engines": {
     "node": "8.11.2"
   },
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
-    "body-parser": "1.18.3",
     "cors": "^2.8.4",
     "debug": "~2.6.9",
     "express": "~4.16.0",
