@@ -17,7 +17,7 @@ export class RoomsProvider {
   
   getRooms(options){
 		  return new Promise((resolve, reject) => {
-      this.http.post('http://localhost:8080/api/rooms', JSON.stringify(options), {
+      this.http.post('http://10.0.0.14:8080/api/rooms', JSON.stringify(options), {
 					headers: new HttpHeaders().set('Content-Type', 'application/json'),
 				})
 				.subscribe(res => {

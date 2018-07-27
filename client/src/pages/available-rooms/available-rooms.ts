@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//import { BookingPage } from '../booking/booking';
+//import { BookingPage } from '../../booking/booking';
 
 @IonicPage() 
 @Component({
@@ -16,7 +16,7 @@ export class AvailableRoomsPage {
     }
  
     bookRoom(room){
-        this.nav.push(BookingPage, {
+        this.nav.push("BookingPage", {
             room: room,
             details: this.navParams.get('details')
         });
